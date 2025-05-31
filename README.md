@@ -1,7 +1,22 @@
-# 🛡️ Ransomware-POC
+<p align="right">
+  <img src="Screenshots/cryptolock_logo.png" width="120" alt="CryptoLock Logo" />
+</p>
 
-**⚠️ For Educational Use Only — Ethical Ransomware Simulation Project**  
-A  ransomware proof-of-concept tool designed for **cybersecurity research**, **red-team simulation**, and **academic demonstration**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Udemy-Course-blue?logo=udemy&style=for-the-badge" alt="Udemy Badge">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0-blueviolet?style=for-the-badge&logo=semantic-release" alt="Version Badge">
+</p>
+
+<h1 align="center">🛡️ Ransomware-POC</h1>
+
+<p align="center">
+  <strong>⚠️ For Educational Use Only — Ethical Ransomware Simulation Project</strong><br>
+  A professionally documented ransomware proof-of-concept tool designed for <br>
+  <b>cybersecurity research</b>, <b>red-team simulation</b>, and <b>academic demonstration</b>.
+</p>
 
 ---
 
@@ -9,14 +24,14 @@ A  ransomware proof-of-concept tool designed for **cybersecurity research**, **r
 
 This project is a two-part educational ransomware simulation:
 
-- 🐍 A **Python GUI** that mimics ransomware behavior — encrypts files and simulates a victim-facing interface.
+- 🐍 A **Python GUI** that mimics ransomware behavior — encrypts files and simulates a victim-facing interface.  
 - 🌐 A **PHP-based Command & Control (C2) dashboard** that logs encryption keys, manages signals, and acts as the attacker interface.
 
-🔐 **Fully safe** – No real destruction or propagation. Built to educate, not harm.
+✅ **Fully safe** – No destruction, no propagation. Strictly for training and lab use.
 
 ---
 
-## 📂 Folder Structure
+## 📁 Folder Structure
 
 ```
 Ransomware-POC/
@@ -32,7 +47,12 @@ Ransomware-POC/
 │   ├── includes/
 │   ├── uploads/
 │   └── assets/
+├── Screenshots/
+│   ├── cryptolock_logo.png
+│   └── cryptolock_gui.png
 ├── README.md
+├── LICENSE
+├── ETHICS.md
 ├── .gitignore
 ```
 
@@ -40,112 +60,122 @@ Ransomware-POC/
 
 ## ✅ Features
 
-| Module              | Key Features                                          |
-|---------------------|-------------------------------------------------------|
-| 🐍 Python Simulator | AES-256 encryption, victim wallpaper, GUI lock screen |
-| 🌐 PHP C2 Panel     | Secure login, view keys, receive victim metadata      |
-| 🔒 Reversible Logic | Safe for labs; no real-world harm or file loss        |
-| 📡 Signal Handling  | Check/stop signals, kill logic, fake command API      |
+| 🧩 Module             | ⚙️ Key Features                                                  |
+|----------------------|------------------------------------------------------------------|
+| 🐍 Python Simulator  | AES-256 encryption, GUI interface, fake ransomware behavior      |
+| 🌐 PHP C2 Panel      | Web dashboard, key logging, login panel, simulated API signaling |
+| 🔄 Safe Logic        | Reversible encryption/decryption, no propagation                 |
+| 📡 Communication     | Simulates attacker ↔ victim API interaction flow                 |
 
 ---
 
-## 🛠️ How to Run
+## ⚙️ How to Run It
 
-### 🐍 Victim-Side Python GUI
+### 🐍 Python GUI
 
-1. Install Python 3.x  
-2. Open terminal:
-   ```bash
-   cd simulator_gui
-   python rans.py
-   ```
-3. This will:
-   - Simulate ransomware GUI
-   - Encrypt files
-   - Send encrypted key (image) to C2 panel
+```bash
+cd simulator_gui
+python rans.py
+```
+
+This launches the GUI simulator, encrypts the victim folder, and optionally sends a key image to the C2 panel.
 
 ---
 
-### 🌐 Attacker-Side Command Panel
+### 🌐 Command & Control (PHP)
 
-1. Copy `control_panel/` into your `htdocs/` directory (XAMPP/WAMP)
-2. Start Apache server
-3. Visit:
+1. Place `control_panel/` into `htdocs` in XAMPP/WAMP
+2. Start Apache
+3. Visit:  
    ```
    http://localhost/control_panel/public/login.php
    ```
-4. Login or register → View logs and key uploads
+4. Log in to access the dashboard, key logs, uploads
 
 ---
 
-## ⚙️ Tech Stack
+## 📸 Preview
 
-| Component      | Technologies Used           |
-|----------------|-----------------------------|
-| GUI & Crypto   | Python, Tkinter, AES (PyCrypto) |
-| Backend        | PHP, HTML, CSS, JavaScript   |
-| Server         | Apache (XAMPP/WAMP)          |
-| Optional DB    | SQLite or MySQL              |
+> Safe demonstration of CryptoLock GUI simulation (for ethical and educational purposes only):
 
----
+<p align="center">
+  <img src="Screenshots/cryptolock_gui.png" width="700" alt="CryptoLock GUI" />
+</p>
 
-## 📸 Screenshots
-
-> Once you upload screenshots into a `/screenshots` folder, reference them like below:
-
-| Victim GUI                | Attacker Dashboard         |
-|---------------------------|----------------------------|
-| ![](screenshots/gui.png)  | ![](screenshots/dashboard.png) |
+<p align="center">
+  <em>CryptoLock ransomware simulator — locked desktop view</em>
+</p>
 
 ---
 
-## ⚠️ Disclaimer: Educational Use Only
+## 📚 Learn the Full Project on Udemy
 
-This project is created solely for:
+🎓 This GitHub project is part of the official course:
 
-- ✅ Cybersecurity education
-- ✅ Red-team demonstrations
-- ✅ Ethical hacking practice
-- ✅ Security awareness training
+🔗 **[Ethical Hacking: Build Ransomware with Control Center POC](https://www.udemy.com/course/ethical-hacking-build-ransomware-with-control-center-poc/)**
 
-🚫 Do **NOT** use this for:
-- Real-world attacks or malware creation
-- Unauthorized systems
-- Any activity outside isolated lab environments
+### 🧠 What You'll Learn
 
-> The authors take **no responsibility** for misuse or abuse of this tool.
+- Build a full ransomware POC in Python
+- Create Command & Control logic in PHP
+- Use APIs, EXE wrappers, steganography
+- Deploy in isolated ethical labs
+- Gain insights into real-world ransomware flow
+
+📦 Course Includes:
+- 9 hours of expert video tutorials  
+- Full source code with documentation  
+- PDF guide + downloads  
+- Lifetime access & certificate
+
+⭐ 4.8 ★ | 394+ Students Enrolled
+
+---
+
+## 🔐 Use Cases
+
+- 🎓 Red-team training simulations
+- 🧠 Ethical hacking bootcamps
+- 🔍 Malware emulation research
+- 🧪 Safe academic or enterprise labs
+
+---
+
+## 🚀 Future Enhancements
+
+- [ ] Victim tracking dashboard
+- [ ] WebSocket control integration
+- [ ] Dummy IP geo visualization
+- [ ] Email-based command trigger
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is built for **educational and ethical cybersecurity** purposes only.
+
+🚫 You may **NOT** use this for:
+- Real-world attacks
+- Unauthorized access
+- Activity outside secure lab environments
+
+> The developer **Mr. Hex** and contributors **disclaim all liability** for any misuse.
 
 ---
 
 ## 📜 License
 
-Licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📈 Use Cases
-
-- 🎓 University-level red-team simulations
-- 🧠 Ethical hacking workshops
-- 🔍 Safe malware behavior emulation
-- 📡 Ransomware incident response training
-
----
-
-## 🚧 Future Enhancements
-
-- [ ] Live victim tracking
-- [ ] WebSocket-based control channels
-- [ ] Geolocation and dummy IP mapping
-- [ ] Email/SMTP signal triggers
+Licensed under the [MIT License](LICENSE).
 
 ---
 
 ## 🙌 Credits
 
-Created by Mr. Hex [@hexa-bin](https://github.com/hexa-bin)  
-Special thanks to cybersecurity educators, researchers, and red-teamers who inspire safe, ethical hacking.
+Developed by **Mr. Hex**  
+GitHub: [@hexa-bin](https://github.com/hexa-bin)
+
+Inspired by cybersecurity educators, red-team mentors, and ethical hackers worldwide.
 
 ---
 
-**Built for Labs 🧪 | Powered by Python 🐍 | Secured by Ethics 🛡️**
+<p align="center"><b>Built for Labs 🧪 | Powered by Python 🐍 | Secured by Ethics 🛡️</b></p>
