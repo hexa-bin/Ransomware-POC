@@ -143,7 +143,7 @@ Licensed under the **MIT License** — see the [LICENSE](LICENSE) file for detai
 
 ## 🙌 Credits
 
-Created by [@hexa-bin](https://github.com/hexa-bin)  
+Created by Mr. Hex [@hexa-bin](https://github.com/hexa-bin)  
 Special thanks to cybersecurity educators, researchers, and red-teamers who inspire safe, ethical hacking.
 
 ---
