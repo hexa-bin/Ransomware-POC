@@ -1,5 +1,5 @@
-<p align="right">
-  <img src="Screenshots/cryptolock_logo.png" width="120" alt="CryptoLock Logo" />
+<p align="center">
+  <img src="Screenshots/cryptolock_logo.png" width="200" alt="CryptoLock Logo" />
 </p>
 
 <p align="center">
